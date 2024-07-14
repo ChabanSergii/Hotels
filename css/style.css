@@ -1,40 +1,36 @@
 /* MullerBold */
 @font-face {
-    font-family: 'Muller Bold';
-    src: url('../fonts/MullerBold.woff2') format('woff2'),
-    url('../fonts/MullerBold.woff') format('woff');
-    font-display: swap;
+    font-family: 'Muller';
+    src: url('../fonts/MullerBold.woff2') format('woff2'), url('../fonts/MullerBold.woff') format('woff');
     font-weight: bold;
+    font-display: swap;
     font-style: normal;
 }
 
 /* MullerLight */
 @font-face {
-    font-family: 'Muller Bold';
-    src: url('../fonts/MullerBold.woff2') format('woff2'),
-    url('../fonts/MullerBold.woff') format('woff');
-    font-display: swap;
+    font-family: 'Muller';
+    src: url('../fonts/MullerBold.woff2') format('woff2'), url('../fonts/MullerBold.woff') format('woff');
     font-weight: lighter;
+    font-display: swap;
     font-style: normal;
 }
 
 /* MullerMedium */
 @font-face {
-    font-family: 'Muller Bold';
-    src: url('../fonts/MullerBold.woff2') format('woff2'),
-    url('../fonts/MullerBold.woff') format('woff');
-    font-display: swap;
+    font-family: 'Muller';
+    src: url('../fonts/MullerBold.woff2') format('woff2'), url('../fonts/MullerBold.woff') format('woff');
     font-weight: 300;
+    font-display: swap;
     font-style: normal;
 }
 
 /* MullerRegular */
 @font-face {
-    font-family: 'Muller Bold';
-    src: url('../fonts/MullerBold.woff2') format('woff2'),
-    url('../fonts/MullerBold.woff') format('woff');
-    font-display: swap;
+    font-family: 'Muller';
+    src: url('../fonts/MullerBold.woff2') format('woff2'), url('../fonts/MullerBold.woff') format('woff');
     font-weight: normal;
+    font-display: swap;
     font-style: normal;
 }
 
@@ -90,7 +86,7 @@ input:focus {
 }
 
 html {
-    font-family: 'Muller Bold', sans-serif;
+    font-family: 'Muller', sans-serif;
     background-color: #f1f1f1;
 }
 
@@ -176,6 +172,7 @@ body {
 .header-my-room {
     font-size: 16px;
     color: var(--color-gold);
+    font-weight: 600;
 }
 
 .header-my-room:hover {
@@ -385,7 +382,7 @@ body {
     padding: 36px 40px;
     margin-top: 25px;
     font-size: 16px;
-    font-weight: 200;
+    font-weight: lighter;
     line-height: 30px;
     background-color: #fff;
     border-radius: 12px;
@@ -438,6 +435,10 @@ input:hover {
     justify-content: space-between;
 }
 
+.section-placement-name {
+    font-weight: 600;
+}
+
 .section-placement-geo {
     margin-bottom: 12px;
     font-style: normal;
@@ -457,6 +458,7 @@ input:hover {
     color: var(--color-gold);
     border: 1px solid var(--color-gold);
     border-radius: 12px;
+    text-wrap: nowrap;
 }
 
 .section-placement-btn:active {
@@ -514,18 +516,15 @@ input:hover {
 }
 
 /* Contacts */
+.section-comunication {
+    margin-bottom: 20px;
+}
+
 .comunication-title {
     margin-top: 26px;
     margin-bottom: 50px;
     font-size: 22px;
     color: #666;
-}
-
-.section-comunication-container {
-    min-height: 620px;
-    margin-top: 28px;
-    margin-bottom: 25px;
-    display: flex;
 }
 
 .contacts-list {
@@ -649,20 +648,18 @@ input:hover {
 
 /* Footer */
 .footer-container {
-    min-height: 337px;
-    margin-bottom: 52px;
     font-size: 16px;
     color: #fff;
-    background-image: url('/img/sun.png');
-    background-repeat: no-repeat;
-    background-size: 253px auto;
-    background-position: 735px 141px;
 }
 
 .container-background {
     padding: 48px 52px;
     display: flex;
     justify-content: space-between;
+    background-image: url('/img/sun.png');
+    background-repeat: no-repeat;
+    background-size: 253px auto;
+    background-position: 735px 141px;
     border-radius: 12px;
     background-color: #333;
 }
