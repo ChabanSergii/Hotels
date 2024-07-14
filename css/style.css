@@ -1,39 +1,39 @@
 /* MullerBold */
 @font-face {
-    font-display: swap;
     font-family: 'Muller Bold';
     src: url('../fonts/MullerBold.woff2') format('woff2'),
-        url('../fonts/MullerBold.woff') format('woff');
+    url('../fonts/MullerBold.woff') format('woff');
+    font-display: swap;
     font-weight: bold;
     font-style: normal;
 }
 
 /* MullerLight */
 @font-face {
-    font-display: swap;
     font-family: 'Muller Bold';
     src: url('../fonts/MullerBold.woff2') format('woff2'),
-        url('../fonts/MullerBold.woff') format('woff');
+    url('../fonts/MullerBold.woff') format('woff');
+    font-display: swap;
     font-weight: lighter;
     font-style: normal;
 }
 
 /* MullerMedium */
 @font-face {
-    font-display: swap;
     font-family: 'Muller Bold';
     src: url('../fonts/MullerBold.woff2') format('woff2'),
-        url('../fonts/MullerBold.woff') format('woff');
+    url('../fonts/MullerBold.woff') format('woff');
+    font-display: swap;
     font-weight: 300;
     font-style: normal;
 }
 
 /* MullerRegular */
 @font-face {
-    font-display: swap;
     font-family: 'Muller Bold';
     src: url('../fonts/MullerBold.woff2') format('woff2'),
-        url('../fonts/MullerBold.woff') format('woff');
+    url('../fonts/MullerBold.woff') format('woff');
+    font-display: swap;
     font-weight: normal;
     font-style: normal;
 }
@@ -58,7 +58,6 @@
 a {
     text-decoration: none;
     color: var(--color-dark-grey);
-    /* line-height: 1; */
 }
 
 b {
@@ -95,6 +94,10 @@ html {
     background-color: #f1f1f1;
 }
 
+body {
+    background-color: #f1f1f1;
+}
+
 .section-title {
     margin-top: 68px;
     margin-bottom: 21px;
@@ -127,6 +130,10 @@ html {
 .text {
     font-size: 16px;
     color: #c2c2c2;
+}
+
+.no-wrap-text {
+    text-wrap: nowrap;
 }
 
 /* Header-Top*/
@@ -182,26 +189,29 @@ html {
 }
 
 /* Header-Nav*/
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 12px;
+    min-height: 70px;
+    margin-top: 30px;
+    padding: 11px 20px;
+}
+
 .header-list {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.header-nav {
-    min-height: 70px;
-    margin-top: 30px;
-    padding: 11px 20px;
-    background-color: #fff;
-    border-radius: 12px;
+.header-botton {
+    display: none;
 }
 
 .header-item:not(:first-child) {
     margin-left: 40px;
-}
-
-.header-item:last-child {
-    margin-left: auto;
 }
 
 .header-item a:hover {
@@ -219,7 +229,7 @@ html {
     color: #d2d2d2;
     border: 1px solid #f1f1f1;
     border-radius: 15px;
-    background-image: url(/img/search.png);
+    background-image: url('/img/search.png');
     background-repeat: no-repeat;
     background-position: 310px center;
     background-color: #f1f1f1;
@@ -254,21 +264,33 @@ html {
 
 /* Hero - Offer*/
 .section-hero-offer-detail{
-    margin-top: 22px;
-    margin-left: 16px;
-    padding: 262px 215px 35px 45px;
-    background-image: url('/img/backgroun_special_offer.png');
+    padding: 247px 135px 35px 45px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     border-radius: 12px;
+    word-spacing: 3px;
+    height: 538px;
+}
+
+.section-hero-card-1 {
+    background-image: url('/img/hero-card-1.png');
+}
+
+.section-hero-card-2 {
+    background-image: url('/img/hero-card-2.png');
+    padding-right: 238px;
+}
+
+.section-hero-card-3 {
+    background-image: url('/img/hero-card-3.png');
+    padding-right: 210px;
 }
 
 .section-main-title {
     margin-top: 0;
-    margin-bottom: 25px;
+    margin-bottom: 32px;
     font-size: 66px;
     color: #fff;
-    word-spacing: 100px;
     line-height: 58px;
 }
 
@@ -279,16 +301,16 @@ html {
     opacity: 0.5;
 }
 
-.section-hero-offer-price {
-    background-image: url('/img/services/sign.svg');
-    background-repeat: no-repeat;
-    background-position: right 11px;
-}
-
 .section-hero-link {
     text-align: center;
     font-size: 16px;
     color: var(--color-gold);
+}
+
+.section-hero-link::after {
+    display: inline-block;
+    content: url('/img/services/sign.svg');
+    transform: translateY(6px);
 }
 
 .section-hero-link:hover {
